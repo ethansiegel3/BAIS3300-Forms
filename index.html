@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Webforms</h1>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="first_name" id="fname" autofocus required autocomplete="given-name"/>
+                </div>
+                <div>
+                    <label for="lname">Last Name:</label>
+            <input type="text" name="last_name" id="lname" required autocomplete="family-name"/>
+</div>
+           <div>
+               <label for="email">Email:</label>
+               <input type="email" name="[unique-name]" id="email" required />
+           </div>
+           
+           <div>
+            <label for ="age">Age:</label>
+            <input type="number" name="age" id="age" min="0" size="3" required/>
+ </div>
+ </fieldset>
+ <div> 
+    <fieldset>
+        <legend>Contact Information</legend>
+            <label for="phone">Phone Number:</label>
+    <input for phone type="tel" name="phone_number" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required/>
+ </div>
+
+ <hr>
+ <h2>Address Information</h2>
+    <div>
+        <label for="address1">Address Line 1:</label>
+        <input type="text" name="address_line_1" id="address1" required autocomplete="address-line1"/>
+    </div>
+    <div>
+        <label for="address2">Address Line 2:</label>
+        <input type="text" name="address_line_2" id="address2" autocomplete="address-line2"/>
+    </div>
+    <div>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" required autocomplete="address-level2"/>
+    </div>
+    <div>
+        <label for="state">State:</label>
+        
+        <select name="state-select" id="state-select" required>
+            <option value="" selected> Choose one ... </option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>                        <option value="DE">Delaware</option>
+                        <option value="DC">District of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+        </select>   
+    </div>
+    <div>
+        <label for="zip">ZIP Code:</label>
+        <input type="text" name="postal_code" id="zip" required pattern="[0-9]{5}" placeholder="12345" autocomplete="postal-code"/>
+            
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend>Survey Questions</legend>
+    <div>
+        <label for="ice-cream"> Favorite flavor of ice cream: </label>
+        <select name="ice-cream" id="ice-cream" required>
+            <option value="" selected> Choose one ... </option>
+            <option value="vanilla"> Vanilla </option>
+            <option value="chocolate"> Chocolate </option>
+            <option value="swirl"> Swirl </option>
+        </select>
+    </div>
+    <div>
+<label for="female">
+    <input type="radio" id="female" name="gender" value="female" required> Female 
+</label>
+
+<label for="male">
+    <input type="radio" id="male" name="gender" value="male"> Male
+</label>
+
+<label for="non-binary">
+    <input type="radio" id="non-binary" name="gender" value="non-binary"> Non-binary
+</label>
+
+        
+    </div>
+    <div>
+        <label for="freshman">
+            <input type="radio" id="freshman" name="year" value="freshman" required> Freshman
+        </label>
+        <label for="sophomore">
+            <input type="radio" id="sophomore" name="year" value="sophomore"> Sophomore
+        </label>
+        <label for="junior">
+            <input type="radio" id="junior" name="year" value="junior"> Junior
+        </label>
+        <label for="senior">
+            <input type="radio" id="senior" name="year" value="senior"> Senior
+        </label>
+    </div>
+    
+    <div>
+        <fieldset>
+  <legend> Choose your favorite activities </legend>
+    <label for="running">
+      <input type="checkbox" id="running" name="activities" value ="running"> Running
+    </label>    
+
+    <label for="biking">
+      <input type="checkbox" id="biking" name="activities" value="biking"> Biking
+    </label>
+
+    <label for="reading">
+      <input type="checkbox" id="reading" name="activities" value="reading"> Reading
+    </label>
+</fieldset> 
+    </div>
+    </fieldset>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+    </main>
+</body>
+</html>
